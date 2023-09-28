@@ -11,7 +11,20 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  
+  <style>
+    .img-fluid{
+      height: 350px;
+      width: 350px;
+    }
+    .img-thumbnail{
+      height: 350px;
+      width: 350px;
+    }
+    .card-img-top{
+      height: 280px;
+      width: 280px;
+    }
+  </style>
 </head>
 <body>
 <h1>“Visit cities with Nikhila Mateti</h1>
@@ -42,16 +55,16 @@
     width allows.</i>
 </p>
 <div class="container">
-
-        <img src = "Milan.jpg" class="img-fluid" height="400" width="300"  alt = "Milan-Italy">
-        <img src = "indore.jpg" class="img-fluid" height="400" width="300" alt = "Indore-India">
-        <img src = "toronto.jpg" class="img-fluid" height="400" width="300" alt = "Toronto-Canada">
-    <div>
-        <img src = "Milan.jpg" class="img-thumbnail" height="500" width="500"  alt = "Milan-Italy">
-        <img src = "indore.jpg" class="img-thumbnail" height="500" width="500" alt = "Indore-India">
-        <img src = "toronto.jpg" class="img-thumbnail" height="500" width="500" alt = "Toronto-Canada">
-    </div>
+        <img src = "Milan.jpg" class="img-fluid" alt = "Milan-Italy">
+        <img src = "indore.jpg" class="img-fluid" alt = "Indore-India">
+        <img src = "toronto.jpg" class="img-fluid" alt = "Toronto-Canada">
 </div>
+<div class="container">
+        <img src = "Milan.jpg" class="img-thumbnail"  alt = "Milan-Italy">
+        <img src = "indore.jpg" class="img-thumbnail" alt = "Indore-India">
+        <img src = "toronto.jpg" class="img-thumbnail" alt = "Toronto-Canada">
+</div>
+
 <table class="table table-success border border-success-subtle border-5 table-striped-columns table-hover">
     <caption class = "caption-top">Table has City, River and Tree names</caption>
     <thead>
@@ -101,27 +114,35 @@
       </tr>
     </tbody>
   </table>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container">
         <span class="navbar-brand">My Cities</span>
     </div>
-</nav>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn" role="group" aria-label="Basic mixed styles example">
-    <div class="btn-group me-2" role="group" aria-label="First group">
-      <button type="button" class="btn btn-primary btn-success">M</button>
-      <button type="button" class="btn btn-primary btn-success">A</button>
-      <button type="button" class="btn btn-primary btn-success">T</button>
-    </div>
-    <div class="btn-group me-2" role="group" aria-label="Second group">
+</nav><br>
+
+     <p>Buttons</p> 
+    <button type="button" class="btn btn-outline-secondary">M</button>
+    <button type="button" class="btn btn-outline-secondary">A</button>
+    <button type="button" class="btn btn-outline-secondary">T</button>
+    <button type="button" class="btn btn-outline-secondary">E</button>
+    <button type="button" class="btn btn-outline-secondary">T</button>
+    <button type="button" class="btn btn-outline-secondary">I</button>
+    <p>Colored Buttons</p> 
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn  btn-success">M</button>
+        <button type="button" class="btn  btn-success">I</button>
+        <button type="button" class="btn  btn-success">T</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
       <button type="button" class="btn btn-secondary btn-warning">E</button>
-      <button type="button" class="btn btn-secondary btn-warning">T</button>
+      <button type="button" class="btn btn-secondary btn-warning">A</button>
     </div>
-    <div class="btn-group" role="group" aria-label="Third group">
-      <button type="button" class="btn btn-info btn-danger">I</button>
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn btn-danger">I</button>
     </div>
-  </div>
-</div>
+  </div><br>
+
 <div class="dropdown">
   <button class="btn btn-secondary btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown button
@@ -131,9 +152,9 @@
     <li><a class="dropdown-item" href="basic.html">Basic</a></li>
   </ul>
 </div>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-md navbar-light and bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">A Few Cities</a>
+    <a class="navbar-brand" href="cities.html">A Few Cities</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -166,5 +187,39 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<div class="row">
+  <div class="col-sm-4 mb-3 mb-sm-0">
+<div class="card" style="width: 18rem;">
+  <img src="indore.jpg" class="card-img-top" alt="indore">
+  <div class="card-body">
+    <h5 class="card-title">Indore</h5>
+    <p class="card-text">Indore is Beautiful City</p>
+    <a href="https://medium.com/the-cup-is-never-full/indore-does-not-deserve-the-award-for-the-cleanest-city-in-india-87874e519610" class="btn btn-primary">Go Indore</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-4 mb-3 mb-sm-0">
+<div class="card" style="width: 18rem;">
+  <img src="toronto.jpg" class="card-img-top" alt="indore">
+  <div class="card-body">
+    <h5 class="card-title">toronto</h5>
+    <p class="card-text">toronto is Beautiful City</p>
+    <a href="https://www.travelandleisure.com/travel-guide/toronto" class="btn btn-primary">Go Toronto</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-3 mb-3 mb-sm-0">
+<div class="card" style="width: 18rem;">
+  <img src="Milan.jpg" class="card-img-top" alt="indore">
+  <div class="card-body">
+    <h5 class="card-title">Milan</h5>
+    <p class="card-text">Milan is Beautiful City</p>
+    <a href="https://www.tripadvisor.in/LocationPhotoDirectLink-g187849-i36616131-Milan_Lombardy.html" class="btn btn-primary">Go Milan</a>
+  </div>
+</div>
+</div>
+</div>
+
 </body>
 </html>
